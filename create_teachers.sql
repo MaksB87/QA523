@@ -1,0 +1,17 @@
+-- create TABLE Teachers(
+-- Name nvarchar(20),
+-- Birtdate date,
+-- Department nvarchar(30),
+-- Phone varchar(20),
+-- Groups nvarchar(20),
+-- Subject nvarchar(20)
+-- );
+
+-- Begin transaction;
+-- insert into Teachers values ('Sophia Davies','1984-12-08','Software development','32-12','31PPS11','C#');
+-- insert into Teachers values('Emma Kirk','1973-05-12','Mathematics','55-34','32PR31','Discrete Math');
+-- insert into Teachers values('Henry MacAlister','1975-02-17','Software development','32-12','30PR11','SQL Server');
+-- insert into Teachers values('Michael Cooper','1978-11-23','Software development','32-12','29PR21','ADO. NET');
+-- insert into Teachers values('Daniel Williams','1979-07-30','Cybersecurity','37-65','32PPS11','ITE1');
+-- insert into Teachers values('Sophia Nelson','1984-12-08','Software development','32-12','30PR11','JavaScript');
+-- insert into Teachers values('Daniel Williams','1979-07-30','Cybersecurity','37-65','32PPS11','WIN10');
