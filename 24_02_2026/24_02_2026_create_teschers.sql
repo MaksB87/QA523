@@ -1,0 +1,44 @@
+-- create table if not exists  Teachers(
+-- Id integer primary key autoincrement,
+-- Name text,
+-- Birthdate date default '1980-01-01' check(Birthdate>'1970-01-01'),
+-- Department text,
+-- Phone text,
+-- Groups text not null check(length(Groups)>0),
+-- Subject text check(Subject!=' ') not null
+-- );
+
+-- insert into Teachers(Name,Birthdate,Department,Phone,Groups,Subject) values 
+-- ('Sophia Davies','1984-12-08','Software development','32-12','31PPS11','C#'),
+-- ('Emma Kirk','1973-05-12','Mathematics','55-34','32PR31','Discrete Math'),
+-- ('Henry MacAlister','1975-02-17','Software development','32-12','30PR11','SQL Server'),
+-- ('Michael Cooper','1978-11-23','Software development','32-12','29PR21','ADO. NET'),
+-- ('Daniel Williams','1979-07-30','Cybersecurity','37-65','32PPS11','ITE1'),
+-- ('Sophia Nelson','1984-12-08','Software development','32-12','30PR11','JavaScript'),
+-- ('Daniel Williams','1979-07-30','Cybersecurity','37-65','32PPS11','WIN10');
+-- create table if not exists  Teachers_reserv(
+-- Id integer primary key autoincrement,
+-- Name text,
+-- Birthdate date default '1980-01-01' check(Birthdate>'1970-01-01'),
+-- Department text,
+-- Phone text,
+-- Groups text not null check(length(Groups)>0),
+-- Subject text check(Subject!=' ') not null
+-- );
+
+-- insert into Teachers_reserv select * from Teachers where id between 1 and 5; 
+-- select *from Teachers_reserv;
+-- alter table Teachers_reserv rename column Phone to Telephone;
+-- alter table Teachers_reserv add column Salary integer default 90000;
+-- alter table Teachers_reserv add column NewColumn text;
+-- alter table Teachers_reserv drop column NewColumn;
+-- alter table Teachers_reserv rename to Techers1;
+-- alter table Techers1 rename to Techers_reserv;
+-- alter table Techers_reserv drop column Salary;
+-- alter table Techers_reserv rename to Teachers_reserv;
+-- select*from Teachers_reserv;
+-- alter table Teachers_reserv add column Salary integer default 90000;
+
+-- update Teachers_reserv set  Salary=Salary+10000 where id in(1,3,5);
+select*from Teachers_reserv;
+-- delete from Teachers_reserv where id=5;
