@@ -31,5 +31,3 @@ select min(Lastname) as [Самая коротка фамилия] from students
 
 
 -- select count(--),Column from Table(s) where -- group by Column having ---;
-
--- select count(*) as [Кол-во преподавателей старше 40] From teachers where 
